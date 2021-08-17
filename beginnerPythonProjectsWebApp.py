@@ -36,15 +36,15 @@ appProjects = [
 ]
 
 aboutProjects = [
-    aboutMadLibs(),
-    aboutGuessTheNumberComputer(),
-    aboutGuessTheNumberUser(),
-    aboutRockPaperScissors(),
-    aboutHangman(),
-    aboutTicTacToe(),
-    aboutMinesweeper(),
     aboutSudoku(),
     aboutMarkovChainTextComposer(),
+    aboutMinesweeper(),
+    aboutTicTacToe(),
+    aboutHangman(),
+    aboutRockPaperScissors(),
+    aboutGuessTheNumberComputer(),
+    aboutGuessTheNumberUser(),
+    aboutMadLibs(),
 ]
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-[end]
 
