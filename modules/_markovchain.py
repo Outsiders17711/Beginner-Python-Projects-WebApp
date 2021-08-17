@@ -41,7 +41,6 @@ input_novels = [
     "Moby-Dick or The Whale",
     "Dracula",
     "The Iliad",
-    "10 Charles Dickens Works",
 ]
 error_text = """
                 **Input text length is too short!**

@@ -24,15 +24,15 @@ from modules._appSessionState import getSessionState
 appPages = ["Home Page", "Python Projects", "About Me"]
 
 appProjects = [
-    "MadLibs",
-    "Guess The Number (Computer)",
-    "Guess The Number (User)",
-    "Rock Paper Scissors",
-    "Hangman",
-    "Tic-Tac-Toe",
-    "Minesweeper",
     "Sudoku",
     "Markov Chain Text Composer",
+    "Minesweeper",
+    "Tic-Tac-Toe",
+    "Hangman",
+    "Rock Paper Scissors",
+    "Guess The Number (Computer)",
+    "Guess The Number (User)",
+    "MadLibs",
 ]
 
 aboutProjects = [
@@ -54,7 +54,7 @@ webapp = getSessionState(
     app_key=0,
     idx_current_page=0,
     page_selector_key=0,
-    idx_current_project=7,
+    idx_current_project=0,
     project_selector_key=0,
     # HangMan,
     hm_word="",
@@ -127,9 +127,9 @@ def reload():
     gc.collect()
     # WebApp
     webapp.app_key = 0
-    webapp.idx_current_page = 0
+    # webapp.idx_current_page = 0
     webapp.page_selector_key = 0
-    webapp.idx_current_project = 7
+    # webapp.idx_current_project = 0
     webapp.project_selector_key = 0
     # HangMan
     webapp.hm_word = ""
@@ -247,7 +247,7 @@ if webapp.idx_current_page == appPages.index("About Me"):
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-[end]
 elif webapp.idx_current_page == appPages.index("Home Page"):
-    if redirects[0].button("Python Projects 🛠"):
+    if redirects[0].button("📌 Projects"):
         webapp.idx_current_page = appPages.index("Python Projects")
         st.experimental_rerun()
 
