@@ -1,4 +1,4 @@
-## Streamlit Mediapipe WebApp
+## Beginner Python Projects WebApp
 
 This webapp is based on the <a href="https://www.youtube.com/watch?v=8ext9G7xspg" style="text-decoration: none;">**12 Beginner Python Projects - Coding Course**</a> developed by [Kylie Ying](https://www.youtube.com/ycubed) with the aim to help improve Python skills by following along with 12 different Python project tutorials.
 
