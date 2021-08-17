@@ -247,7 +247,7 @@ if webapp.idx_current_page == appPages.index("About Me"):
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-[end]
 elif webapp.idx_current_page == appPages.index("Home Page"):
-    if redirects[0].button("📌 Projects"):
+    if redirects[0].button("📌Projects"):
         webapp.idx_current_page = appPages.index("Python Projects")
         st.experimental_rerun()
 
