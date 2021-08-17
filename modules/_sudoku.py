@@ -11,7 +11,7 @@ import streamlit as st
 import gc
 
 gc.enable()
-sys.setrecursionlimit(1500)
+sys.setrecursionlimit(3500)
 
 
 # [start] [Sudoku]____________________________________________________
@@ -188,9 +188,9 @@ def playSudoku(sdk):
     st.markdown("")
     st.sidebar.markdown("")
 
-    options = st.sidebar.columns([1, 10, 1])
+    options = st.sidebar.columns([1, 20, 1])
     percent = options[1].slider(
-        "Choose The Percentage Of Filled Cells [0.5-0.9] :",
+        "Choose The Percentage Of Filled Cells [0.5 - 0.9] :",
         min_value=0.5,
         max_value=0.9,
         step=0.1,
@@ -241,7 +241,7 @@ def playSudoku(sdk):
     # game.printBoard(sdk, cheat_board, actual=True)
 
     resetGame, quitGame = False, False
-    reset_quit = st.sidebar.columns([2, 4, 4, 2])
+    reset_quit = st.sidebar.columns([1, 6, 5, 1])
     if reset_quit[1].button("Quit Game"):
         quitGame = True
     if reset_quit[2].button("Reset Game"):

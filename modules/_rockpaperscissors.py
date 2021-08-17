@@ -11,10 +11,10 @@ gc.enable()
 def playRockPaperScissors(rps):
     st.sidebar.markdown("""___""")
     titles = st.sidebar.columns([2, 11, 1])
-    titles[1].markdown(f"**> WINS <{'&nbsp'*10}> TIES <{'&nbsp'*10}> LOSSES <**")
+    titles[1].markdown(f"**> WINS <{'&nbsp'*5}> TIES <{'&nbsp'*5}> LOSSES <**")
     scores = st.sidebar.columns([4, 14, 1])
     scores[1].markdown(
-        f"**`{rps.rps_wins}` {'&nbsp'*20} `{rps.rps_ties}` {'&nbsp'*20} `{rps.rps_losses}`**"
+        f"**`{rps.rps_wins}` {'&nbsp'*16} `{rps.rps_ties}` {'&nbsp'*17} `{rps.rps_losses}`**"
     )
 
     filled = st.columns([3, 10, 3])
@@ -70,7 +70,7 @@ def playRockPaperScissors(rps):
         time.sleep(1.5)
         st.experimental_rerun()
 
-    b_reset = st.sidebar.columns([1, 1, 1])
+    b_reset = st.sidebar.columns([2, 3, 1])
     if b_reset[1].button("Reset Game"):
         rps.rps_wins, rps.rps_ties, rps.rps_losses = 0, 0, 0
         st.experimental_rerun()

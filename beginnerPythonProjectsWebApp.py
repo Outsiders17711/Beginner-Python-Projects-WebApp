@@ -221,7 +221,7 @@ st.sidebar.markdown(
     <h3 style="font-variant: small-caps; font-size: xx-large; ">
     <font color=#008af3>s i d e {nbsp} b a r</font>
     </h3>
-    <code style="font-size:small; ">Session ID: {ReportThread.get_report_ctx().session_id}</code>
+    <code style="font-size:smaller; ">{ReportThread.get_report_ctx().session_id}</code>
     </div>
     """,
     unsafe_allow_html=True,
@@ -230,16 +230,15 @@ st.sidebar.markdown(
 
 # [start] [pages and projects]_______________________________________
 redirects = st.sidebar.columns([1, 1, 1])
-if redirects[1].button("About Me 😎"):
+if redirects[1].button("About Me"):
     webapp.idx_current_page = appPages.index("About Me")
     st.experimental_rerun()
-if redirects[2].button("Reload App 🔃"):
+if redirects[2].button("Reload App"):
     reload()
 
 if webapp.idx_current_page == appPages.index("About Me"):
-    if redirects[0].button("Home Page 🏠"):
+    if redirects[0].button("Home Page"):
         webapp.idx_current_page = appPages.index("Home Page")
-        webapp.current_page = "Home Page"
         st.experimental_rerun()
 
     st.markdown(aboutMe(), unsafe_allow_html=True)
@@ -274,7 +273,7 @@ elif webapp.idx_current_page == appPages.index("Home Page"):
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-[end]
 elif webapp.idx_current_page == appPages.index("Python Projects"):
-    if redirects[0].button("Home Page 🏠"):
+    if redirects[0].button("Home Page"):
         webapp.idx_current_page = appPages.index("Home Page")
         st.experimental_rerun()
 

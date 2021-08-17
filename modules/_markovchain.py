@@ -1,4 +1,3 @@
-import dataclasses
 import os
 import random
 import re
@@ -33,16 +32,16 @@ input_artists = [
     "The Chainsmokers",
 ]
 input_novels = [
-    "10 Charles Dickens Works",
     "Harry Potter - Sorcerer's Stone",
     "Wuthering Heights",
+    "A Tale of Two Cities",
     "Pride and Prejudice",
     "Alice’s Adventures in Wonderland",
     "The Adventures of Sherlock Holmes",
     "Moby-Dick or The Whale",
     "Dracula",
     "The Iliad",
-    "A Tale of Two Cities",
+    "10 Charles Dickens Works",
 ]
 error_text = """
                 **Input text length is too short!**
@@ -187,7 +186,7 @@ def runMarkovChain(mc):
     st.sidebar.markdown("")
     cols = st.sidebar.columns([1, 10, 1])
     length = cols[1].slider(
-        "Choose The Length Of The Output Composition [50-250] :",
+        "Output Composition Length [50 - 250] :",
         min_value=50,
         max_value=250,
         step=25,
@@ -225,12 +224,12 @@ def runMarkovChain(mc):
 
             artist = input_artists[mc.idx_artist]
             artist = artist.lower().replace(" ", "_")
-            lyrics_files = [
-                f"data\\songs\\{artist}\\{song}"
-                for song in os.listdir(f"data\\songs\\{artist}")
-            ]
 
             try:
+                lyrics_files = [
+                    f"data/songs/{artist}/{song}"
+                    for song in os.listdir(f"data/songs/{artist}")
+                ]
                 composer.get_words_from_text(lyrics_files)
                 composer.make_graph()
                 composer.compose_text(mc)
@@ -253,9 +252,9 @@ def runMarkovChain(mc):
 
             novel = input_novels[mc.idx_novel]
             novel = novel.lower().replace(" ", "_")
-            novel_file = [f"data\\texts\\{novel}.txt"]
 
             try:
+                novel_file = [f"data/texts/{novel}.txt"]
                 composer.get_words_from_text(novel_file)
                 composer.make_graph()
                 composer.compose_text(mc)

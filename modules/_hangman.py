@@ -32,7 +32,7 @@ def HangMan(hm):
     word_list = [letter if letter in hm.hm_used_letters else "-" for letter in hm.hm_word]
 
     st.sidebar.markdown("___")
-    b_reset, b_show_answer = st.sidebar.columns([3, 2]), st.sidebar.columns([1, 1])
+    b_reset, b_show_answer = st.sidebar.columns([3, 3]), st.sidebar.columns([1, 1])
     show_answer = b_show_answer[0].button("🔍 Show Answer 🔭")
 
     st.markdown(

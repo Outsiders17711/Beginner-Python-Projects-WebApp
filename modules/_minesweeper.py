@@ -1,4 +1,3 @@
-import dataclasses
 import random
 import time
 
@@ -155,9 +154,9 @@ def playMineSweeper(ms):
     st.markdown("")
     st.sidebar.markdown("")
 
-    options1, options2 = st.sidebar.columns([2, 1]), st.sidebar.columns([1, 5])
+    options1, options2 = st.sidebar.columns([3, 2]), st.sidebar.columns([1, 7])
     size = options1[0].number_input(
-        "Choose The Board Size [MxM] | [6-10]:",
+        "Choose The Board Size [6-10]:",
         min_value=6,
         max_value=10,
         value=ms.dim_size,

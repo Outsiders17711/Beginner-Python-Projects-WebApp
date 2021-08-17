@@ -9,9 +9,9 @@ gc.enable()
 # [start] [userGuess]_________________________________________________
 def userGuess(ucg):
     st.sidebar.markdown("""___""")
-    cols = st.sidebar.columns([1, 10, 1])
+    cols = st.sidebar.columns([1, 20, 1])
     min_max = cols[1].slider(
-        "Choose The Range Of Numbers For The Computer'S Guess:",
+        "Choose The Range Of The Computer's Guess:",
         min_value=1,
         max_value=100000,
         value=(ucg.ug_min_val, ucg.ug_max_val),
@@ -47,7 +47,7 @@ def userGuess(ucg):
         ucg.ug_history[len(ucg.ug_history)] = f"{guess}: {output}"
         st.write(ucg.ug_history)
 
-    b_reset = st.sidebar.columns([1, 1, 1])
+    b_reset = st.sidebar.columns([2, 3, 1])
     if b_reset[1].button("Reset Game"):
         ucg.ug_min_val = 0
         ucg.ug_max_val = 100000
@@ -62,15 +62,15 @@ def userGuess(ucg):
 # [start] [computerGuess]_____________________________________________
 def computerGuess(ucg):
     st.sidebar.markdown("""___""")
-    cols = st.sidebar.columns([1, 10, 1])
+    cols = st.sidebar.columns([1, 20, 1])
     min_max = cols[1].slider(
-        "Choose The Range Of Numbers For Your Random Guess:",
+        "Choose The Range For Your Random Guess:",
         min_value=1,
         max_value=100000,
         value=(ucg.cg_min_val, ucg.cg_max_val),
     )
     user_guess = cols[1].number_input(
-        f"Choose Your Random Number <Between {ucg.cg_min_val} and {ucg.cg_max_val}>:",
+        f"Choose Your Random Number [{ucg.cg_min_val} - {ucg.cg_max_val}]:",
         min_value=ucg.cg_min_val,
         max_value=ucg.cg_max_val,
     )
@@ -83,7 +83,7 @@ def computerGuess(ucg):
         ucg.cg_random_number = int(user_guess)
         st.experimental_rerun()
 
-    cg_options = st.sidebar.columns([1, 4, 3, 1])
+    cg_options = st.sidebar.columns([1, 5, 4, 1])
     if cg_options[1].button("Start Game"):
         ucg.cg_game_on = True if ucg.cg_game_on is False else False
         st.experimental_rerun()

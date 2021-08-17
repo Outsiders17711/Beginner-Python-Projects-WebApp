@@ -19,7 +19,7 @@ class Player:
         pass
 
 
-class RandomComputerPlayer(Player):
+class NormalComputerPlayer(Player):
     def __init__(self, letter=None):
         super().__init__(letter)
 
@@ -217,7 +217,7 @@ def computerTicTacToe(
         ttt.start_game = True
     cols = st.sidebar.columns([1, 10, 1])
     game_speed = cols[1].slider(
-        "Select Game Speed [1(slow) - 5(fast)]:",
+        "Select Game Speed [ 1 (slow) - 5 (fast) ]:",
         min_value=1.0,
         max_value=5.0,
         step=0.5,
@@ -266,16 +266,16 @@ def computerTicTacToe(
 
 # [start]____________________________________________________________
 def playTicTacToe(ttt):
-    str_players = ["Human", "Genius Computer", "Random Computer"]
+    str_players = ["Human", "Genius Computer", "Normal Computer"]
     class_players_x = [
         HumanPlayer("X"),
         GeniusComputerPlayer("X"),
-        RandomComputerPlayer("X"),
+        NormalComputerPlayer("X"),
     ]
     class_players_o = [
         HumanPlayer("O"),
         GeniusComputerPlayer("O"),
-        RandomComputerPlayer("O"),
+        NormalComputerPlayer("O"),
     ]
 
     st.markdown("")
@@ -328,7 +328,7 @@ def playTicTacToe(ttt):
 
     elif "Human" in [x_player, o_player]:
         st.sidebar.markdown("")
-        start_reset = st.sidebar.columns([3, 2])
+        start_reset = st.sidebar.columns([5, 4])
         if start_reset[0].button("Start Game") and not ttt.start_game:
             ttt.start_game = True
             st.experimental_rerun()
