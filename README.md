@@ -2,10 +2,7 @@
 
 This webapp is based on the <a href="https://www.youtube.com/watch?v=8ext9G7xspg" style="text-decoration: none;">**12 Beginner Python Projects - Coding Course**</a> developed by [Kylie Ying](https://www.youtube.com/ycubed) with the aim to help improve Python skills by following along with 12 different Python project tutorials.
 
-
- <div style="text-align: center;">
-
- ⭐️⭐️⭐️ Course Contents ⭐️⭐️⭐️
+<p align="center">⭐️⭐️⭐️ Course Contents ⭐️⭐️⭐️</p>
 
     Madlibs 
     Guess the Number (Computer) 
@@ -17,9 +14,8 @@ This webapp is based on the <a href="https://www.youtube.com/watch?v=8ext9G7xspg
     Sudoku 
     Markov Chain Text Composer 
 
-⭐️⭐️⭐️ Course Contents ⭐️⭐️⭐️
+<p align="center">⭐️⭐️⭐️ Course Contents ⭐️⭐️⭐️</p>
 
-</div>
     
 <a href="https://streamlit.io/" style="text-decoration: none;">**StreamLit**</a> is used to create the Web Graphical User Interface (GUI). Streamlit is a cool way to turn data scripts into shareable web apps in minutes, all in Python. You can check out the launch <a href="https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace" style="text-decoration: none;">*blog post*</a> for more information.
 
@@ -35,12 +31,12 @@ Do check out their channels and websites for more informative and exciting Machi
 
 ## Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/outsiders17711/streamlit-mediapipe-webapp/main/streamlitMediapipeOnline.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/outsiders17711/Beginner-Python-Projects-WebApp/main/beginnerPythonProjectsWebApp.py)
 
 
-The app was been deployed on Streamlit. You can check it out **[here](https://share.streamlit.io/outsiders17711/streamlit-mediapipe-webapp/main/streamlitMediapipeOnline.py)**.
+The app was been deployed on Streamlit. You can check it out **[here](https://share.streamlit.io/outsiders17711/Beginner-Python-Projects-WebApp/main/beginnerPythonProjectsWebApp.py)**.
 
-![Short Demo](https://github.com/Outsiders17711/streamlit-Mediapipe-WebApp/blob/main/demo/streamlitMediapipe.gif?raw=true)
+![Short Demo](https://github.com/Outsiders17711/Beginner-Python-Projects-WebApp/blob/main/demo/beginnerPythonProjectsWebApp.gif?raw=true)
 
 
 <hr>
