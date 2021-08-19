@@ -97,9 +97,9 @@ webapp = getSessionState(
     actual_board=[],
     game_over=False,
     # TicTacToe,
-    x_player="Random Computer",
+    x_player="Normal Computer",
     o_player="Genius Computer",
-    current_player="Random Computer",
+    current_player="Normal Computer",
     current_letter="X",
     ttt_board_state=[" " for _ in range(9)],
     start_game=False,
@@ -172,9 +172,9 @@ def reload():
     webapp.actual_board = []
     webapp.game_over = False
     # TicTacToe
-    webapp.x_player = "Random Computer"
+    webapp.x_player = "Normal Computer"
     webapp.o_player = "Genius Computer"
-    webapp.current_player = "Random Computer"
+    webapp.current_player = "Normal Computer"
     webapp.current_letter = "X"
     webapp.ttt_board_state = [" " for _ in range(9)]
     webapp.start_game = False
