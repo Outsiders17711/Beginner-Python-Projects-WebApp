@@ -1,3 +1,9 @@
+<p align="right">
+<img src="https://badges.pufler.dev/visits/Outsiders17711/Beginner-Python-Projects-WebApp?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
+<img src="https://badges.pufler.dev/updated/Outsiders17711/Beginner-Python-Projects-WebApp?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
+<img src="https://badges.pufler.dev/created/Outsiders17711/Beginner-Python-Projects-WebApp?style=for-the-badge&logo=github" alt="https://github.com/Outsiders17711" />&nbsp;
+</p>
+
 ## Beginner Python Projects WebApp
 
 This webapp is based on the <a href="https://www.youtube.com/watch?v=8ext9G7xspg" style="text-decoration: none;">**12 Beginner Python Projects - Coding Course**</a> developed by [Kylie Ying](https://www.youtube.com/ycubed) with the aim to help improve Python skills by following along with 12 different Python project tutorials.
